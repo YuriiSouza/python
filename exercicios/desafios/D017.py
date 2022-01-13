@@ -1,3 +1,4 @@
+#Faça um programa que leia os catetos e retorne a hipotenusa.
 import math
 
 Cadjacente = float(input("Comprimento do cateto adjacente: "))

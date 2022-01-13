@@ -1,3 +1,4 @@
+#Faça um programa que leia uma mensagem qualquer inserida e retorne na tela informações sobre a mesma.
 algo = input("Digite algo: ")
 
 print(type(algo))

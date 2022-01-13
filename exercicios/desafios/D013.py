@@ -1,4 +1,4 @@
-#Salário com 15% de aumento
+#Faça um programa que leia um salário e calcule o valor do novo salário com 15% de aumento.
 salário = float(input("Digíte o valor atual do salário: "))
 
 salárioFinal = salário + (salário*0.15);

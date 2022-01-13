@@ -1,3 +1,4 @@
+#Faça um programa que leia uma medida em metros e calcule as conversões para outras unidade e retorne elas na tela.
 m = float(input("Valor em Metros: "))
 
 km = m/1000;

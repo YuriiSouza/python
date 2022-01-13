@@ -1,3 +1,4 @@
+#Faça um programa que leia um número e retorne seu sucessor e antecessor.
 number = int(input("Digite um número: "))
 
 sucussorDeNumber = number + 1;

@@ -1,3 +1,4 @@
+#Faça um programa que leia o valor de um produto e desconto a ele dado e retorne o valor final.
 valorDoProduto = float(input("Valor do produto: "))
 desconto = float(input("Valor do desconto(em porcentagem): "))
 

@@ -1,3 +1,4 @@
+#Faça um programa que leia um valor e apresente a tabuada referente ao valor inserido.
 n = int(input("Digite um número para ver sua tabuada: "))
 cont = 0;
 multiplicacao = 1

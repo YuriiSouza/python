@@ -1,4 +1,4 @@
-#2 metros quadrados de parede precisam de 1 litro de tinta para ser pintado
+#Faça um programa que leia as medidas de uma parede e calcule a quantidade de tinta nescessaria para pinta-la, sendo que 2 metros quadrados de parede precisam de 1 litro de tinta para ser pintado
 largura = float(input("Largura da parede: "))
 altura = float(input("Altura da parede: "))
 

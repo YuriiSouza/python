@@ -1,3 +1,4 @@
+#Faça um programa que leia um valor inteiro, calcule e retorne a raiz quadrada, triplo e dobro do valor inserido.
 number = int(input("Digite um valor: "))
 
 #raizQuadradaNumber = number**(1/2);
