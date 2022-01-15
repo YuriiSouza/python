@@ -20,16 +20,3 @@ print("Unidade: {}".format(unidade))
 print("Dezena: {}".format(dezena))
 print("Centena: {}".format(centena))
 print("Milhar: {}".format(milhar))
-#Solução str
-'''
-numero = str(input("Digite um número de 0 a 9999: "))
-print(len(numero)-1)
-print(len(numero)-2)
-print(len(numero)-3)
-print(len(numero)-4)
-
-print("Unidade: {}".format(numero[len(numero)-1]))
-print("Dezena: {}".format(numero[abs(len(numero)-2)]))
-print("Centena: {}".format(numero[abs(len(numero)-3)]))
-print("Milhar: {}".format(numero[abs(len(numero)-4)]))
-'''
