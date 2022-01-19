@@ -3,10 +3,19 @@ n1 = int(input("Digite um número: "))
 n2 = int(input("Digite um número: "))
 n3 = int(input("Digite um número: "))
 
-menor = 0;
-maior = 0;
+maior = n1
+menor = n1
 
-if n1 > n2:
-    maior = n1
-else:
+if n2 >= maior:
     maior = n2
+if n2 <= menor:
+    menor = n2
+if n3 >= maior:
+    maior = n3
+if n3 <= menor:
+    menor = n3
+
+print('-=-'*20)
+print("O maior valor é: {}".format(maior))
+print("O menor valor é: {}".format(menor))
+print('-=-'*20)
