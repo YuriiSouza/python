@@ -4,3 +4,21 @@
 #- 25 até 30: Sobrepeso
 #- 30 até 40: Obesidade
 #- Acima de 40: Obesidade Mórbida
+altura = float(input("Altura: "))
+peso = float(input("Peso: "))
+
+imc = peso/altura**2;
+print("Seu Índice de massa comporal é {:.1f}".format(imc))
+
+if imc < 18.5:
+    print("Abaixo do peso.")
+elif imc < 25:
+    print("Peso ideal.")
+elif imc < 30:
+    print("Sobrepeso.")
+elif imc < 40:
+    print("Obesidade.")
+elif imc > 40:
+    print("Obesidade Mórbida.")
+else:
+    print("ERRO")
