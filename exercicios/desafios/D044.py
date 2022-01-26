@@ -12,14 +12,16 @@ preco = float(input("Valor do produto: "))
 
 if tipoDePagamento == '1' or tipoDePagamento == 'dinheiro' or tipoDePagamento == 'cheque':
     preco = preco - (preco * 0.1);
-    print("O valor será R${:.2f}".format(preco))
+    print("O valor será R${:.2f}. 10%' de DESCONTO".format(preco))
 elif tipoDePagamento == '2':
     preco = preco - (preco * 0.05);
-    print("Valor será de R${:.2f}".format(preco))
+    print("Valor será de R${:.2f}. 5%' de DESCONTO".format(preco))
 elif tipoDePagamento == '3' or tipoDePagamento == '2x no cartão':
-    print("O valor se mantém em R${:.2f}".format(preco))
+    print("O valor se mantém em R${:.2f}. SEM JUROS".format(preco))
 elif tipoDePagamento == '4':
     preco = preco + (preco * 0.2);
-    print("Valor do produto R${:.2f}".format(preco))
+    nParcelas = int(input("Número de parcelas: "))
+    vParcela = preco/nParcelas;
+    print("Valor do produto R${:.2f}, pago em {} a R${:.2f}. COM 20%' DE JUROS".format(preco, nParcelas, vParcela))
 else:
     print("ERRO")
