@@ -1,9 +1,9 @@
 #Crie um programa que faça o computador jogar Jokenpô com você.
 from random import randint
 from time import sleep
-print("=-=_"*20)
+print("=-=_"*10)
 print("jOkEnPô")
-print("=-=_"*20)
+print("=-=_"*10)
 
 while True:
     jokenpo = ['pedra','papel','tesoura']
@@ -13,8 +13,8 @@ while True:
     [3]==tesoura\n'''))
 
     y = randint(1,3)
-    print("Sua escolha: {}\n".format(jokenpo[n-1]))
-    print("Escolha da IA: {}\n".format(jokenpo[y-1]))
+    print(f"Sua escolha: {jokenpo[n-1]}\n")
+    print(f"Escolha da IA: {jokenpo[y-1]}\n")
     print("JO")
     sleep(1)
     print("KEN")
