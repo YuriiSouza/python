@@ -1,5 +1,5 @@
 #Crie um programa que leia uma frase qualquer e diga se ela é um palíndromo, desconsiderando os espaços.
-frase = str(input("Digite uma frase para analise: ")).lower().split()
+frase = str(input("Digite uma frase para analise: ")).lower().strip().split()
 frase1 = ''
 
 for c in range(0,len(frase)):
