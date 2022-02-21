@@ -2,29 +2,36 @@
 from random import randint
 from time import sleep
 
+cont = 0
 print("-="*12)
 print("Advinhe o valor sorteado")
 print("-="*12)
 n = randint(0,11)
 
 while True:
+    cont += 1
     r = int(input("Qual valor o computador sorteou? "))
     if r == n:
         break
     else:
         print("...")
-        sleep(1)
+        sleep(0.5)
         print("...")
-        sleep(1)
+        sleep(0.5)
         print("...")
-        sleep(1)
+        sleep(0.75)
         print("Tente novamente...")
+        if r > n:
+            print("Menos...")
+        else:
+            print("mais...")
 
 print("...")
-sleep(1)
+sleep(0.5)
 print("...")
-sleep(1)
+sleep(0.5)
 print("...")
-sleep(1)
+sleep(0.75)
 print(f"""Parabéns, você acertou...
-O valor sorteado era mesmo {n}""")
+O valor sorteado era mesmo {n}
+Você acertou com {cont} tentativas...""")
