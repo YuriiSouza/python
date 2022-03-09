@@ -4,12 +4,13 @@
 #C) quantas mulheres tem menos de 20 anos. 
 contMaior18 = 0
 contM = 0
+contF = 0
 while True:
     nome = str(input("Nome: "))
     idade = int(input("Idade: "))
     while True:
         sexo = str(input("Sexo"))
-        if sexo in "MnFf":
+        if sexo in "MmFf":
             break
         else:
             print("Valor invalido...")
@@ -17,10 +18,12 @@ while True:
         contMaior18 += 1
     if sexo in "Mm":
         contM += 1
-    
+    if sexo in "Ff" and idade < 20:
+        contF += 1
     while True:
         condicao = str(input("Deseja continuar? [S/N]"))
         if condicao in "NnSs":
             break
     if condicao in "nN":
         break
+print(f"Maiores de 18 = {contMaior18}\nNúmero de Homens cadastrados {contM}\nNúmero de mulheres com mais de 20 anos registradas {contF}")
