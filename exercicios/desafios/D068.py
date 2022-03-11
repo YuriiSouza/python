@@ -2,6 +2,7 @@
 from random import randint
 from time import sleep
 
+cont = 0
 while True:
     player = int(input("[1]IMPAR\n[2]PAR\n"))
     playerNum = int(input("Digite um valor:"))
@@ -16,6 +17,7 @@ while True:
         sleep(0.4)
         print(pc + playerNum)
         print("GANHOUU")
+        cont += 1
     else:
         print("O resultado foi ")
         sleep(0.4)
@@ -24,3 +26,4 @@ while True:
         print(pc + playerNum)
         print("perdeu, até mais...")
         break
+print(f"Você ganhou {cont} vezes...")

@@ -9,7 +9,7 @@ while True:
     cont += 1
     if n > maior:
         maior = n
-    if r == '':
+    if cont == 1:
         menor = n
     elif n < menor:
         menor = n
