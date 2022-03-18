@@ -14,5 +14,18 @@ for n in range(0,5):
 print("=-"*15)
 print("ULTIMOS COLOCADOS")
 print("=-"*15)
-for n, t in enumarete(times):
-     print((f"{len(times)-n}º lugar = {times[len(times)-n]}"))
+for n in range(16, 21):
+    print((f"{n}º lugar = {times[n-1]}"))
+
+
+print("=-"*15)
+print("ORDEM ALFABETICA")
+print("=-"*15)
+
+print(sorted(times))
+
+print("-"*17)
+
+posicao = times.index("Chapecoense") + 1
+
+print(f"Chapecoense esta em {posicao}")
