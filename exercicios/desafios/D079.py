@@ -6,13 +6,27 @@ while True:
     if valor not in valores:
         valores.append(valor)
 
-    continua = str(input("Deseja continuar? "))
+    while True:
+        continua = str(input("Deseja continuar? "))
+        if continua in 'SsNn':
+            break
+        else:
+            print("Valor invalido...")
     if continua in 'Nn':
         break
 
-cont = menor = 0
+cont = menor = cont1 = 0
 valoresOrdenado = [list]
+
 while cont < len(valores):
-    if cont == 0:
-        menor == valores[cont]
-    elif 
+    while cont1 < len(valores):
+        if cont1 == 0:
+            menor == valores[cont1]
+        elif menor > valores[cont1]:
+            menor = valores[cont1]
+        cont1 = cont1 + 1
+    valores.append(menor)
+    cont = cont + 1
+
+print(valores)
+print(valoresOrdenado)
