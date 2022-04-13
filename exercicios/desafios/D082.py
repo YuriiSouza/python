@@ -3,4 +3,20 @@ list1 = list()
 listJustPair = list()
 listJustOdd = list()
 
+while True:
+    n = int(input("Número: "))
 
+    list1.append(n)
+
+    if n % 2 == 0:
+        listJustPair.append(n)
+    else:
+        listJustOdd.append(n)
+
+    verification = str(input("Do you wanna stop? [Y/N]: "))
+    if verification in 'Yy':
+        break;
+
+print(f"The numbers insited: {list1}")
+print(f"The paur numbers is {listJustPair}")
+print(f"The paur numbers is {listJustOdd}")
