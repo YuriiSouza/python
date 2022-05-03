@@ -17,7 +17,7 @@ print("VALORES", end = ":::")
 print(listaNumerica)
 
 print(f"O valor menor {min(listaNumerica)} esta nas posições: ", end = "")
-for n in listmenor:
-    print(n, "...", end = " ")
+for n, i in enumerate(listmenor):
+    print(i, "...", end = " ")
 
 print(f"O valor maior {max(listaNumerica)}")
