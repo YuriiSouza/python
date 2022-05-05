@@ -13,11 +13,15 @@ for n in listaNumerica:
     if n == min(listaNumerica):
         listmenor.append(listaNumerica.index)
 
+print("")
+
 print("VALORES", end = ":::")
 print(listaNumerica)
 
 print(f"O valor menor {min(listaNumerica)} esta nas posições: ", end = "")
-for n in listmenor:
-    print(n, "...", end = " ")
+for n in range(0, len(listmenor)):
+    print(f"{n}...", end = " ")
 
-print(f"O valor maior {max(listaNumerica)}")
+print(f"O valor maior {max(listaNumerica)} está nas posições: ")
+for n in range(0, len(listmaior)):
+    print(f"{n}...", end = " ")
