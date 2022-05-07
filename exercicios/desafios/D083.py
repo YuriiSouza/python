@@ -15,3 +15,5 @@ if analysis1 == analysis2:
     print("the account is white")
 else:
     print("The account is wrong")
+
+print()

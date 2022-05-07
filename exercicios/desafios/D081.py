@@ -5,8 +5,7 @@
 list = list()
 
 while True:
-    number = int(input("number: "))
-    list.append(number)
+    list.append(number = int(input("number: ")))
     verification = input("Do you wanna continue? [Y/N] ")
     if verification in 'Nn':
         break
