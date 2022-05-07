@@ -16,4 +16,3 @@ if analysis1 == analysis2:
 else:
     print("The account is wrong")
 
-print()
