@@ -3,12 +3,24 @@
 #B) Uma listagem com as pessoas mais pesadas.
 #C) Uma listagem com as pessoas mais leves.
 
+from this import d
+
+
 List = []
 princ = []
+mai = men = 0
 
 while True:
     List.append(str(input("Name: ")))
     List.append(int(input("Weight: ")))
+    if len(princ) == 0:
+        mai = men = 0
+    else:
+        if mai < List[1]:
+            mai = List[1]
+        elif men > List[1]:
+            men = List[1]
+
     princ.append(List[:])
     List.clear
     
@@ -18,13 +30,7 @@ while True:
 
 
 print("")
-print(f"Number of peoples inserts is {len(princ)}\n")
-print(f"\nThe ligthers is the:")
-for n in range(0, len(princ)):
-    if princ[n][2] < 70:
-        print(princ[n][], end = ' ')
-    print(f"The  weight", lighter[n])
-print(f"\nThe fatters is: ")
-for n in range(0, len(mostWeightName)):
-    print(mostWeightName[n])
-    print(f"Your weight is {mostWeight[n]}")
+print(f"Number of peoples inserts is {len(princ) + 1}\n")
+
+print(f"O wegihter is {mai}")
+print(f"The ligthest is {men}")
