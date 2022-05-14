@@ -1,6 +1,4 @@
 #Crie um programa que leia nome e duas notas de vários alunos e guarde tudo em uma lista composta. No final, mostre um boletim contendo a média de cada um e permita que o usuário possa mostrar as notas de cada aluno individualmente.
-from unicodedata import name
-
 
 list1 = list()
 allList = list()
@@ -32,7 +30,9 @@ if verification in 'y':
         name = str(input("Name: "))
         for x in range(0, len(allList)):
             if allList[x][0] == name:
+
                 media = (allList[x][1] + allList[x][2]) / 2
+
                 print("")
                 print("=-"*10)
                 print(f"Name: {allList[x][0]}")
@@ -41,10 +41,11 @@ if verification in 'y':
                 print(f"The MEDIA: {media}")
                 print("=-"*10)
                 print("")
-            
-    verify = str(input("Do you wanna see the results of someone? ")).lower()
-    if verify in 'no':
-        break
+        verify = str(input("Do you wanna see the results of someone? ")).lower()
+        if verify in 'no':
+            break
 
 else:
     print("GOOD BYE")
+
+print("GOOD BYE")
