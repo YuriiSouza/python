@@ -2,8 +2,6 @@
 #a) de 1 até 10, de 1 em 1
 #b) de 10 até 0, de 2 em 2
 #c) uma contagem personalizada#
-from turtle import clear
-
 
 def contador(inicio, fim, passo):
     print(f"Contando de {inicio} até {fim} de {passo} em {passo}")
@@ -11,6 +9,10 @@ def contador(inicio, fim, passo):
     
     if passo < 0:
         passo = passo * (-1)
+
+    if passo == 0:
+        passo = 1
+    
     if fim > inicio:
         while fim > cont:
             print(cont)
