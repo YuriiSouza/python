@@ -2,7 +2,7 @@ def factorial(num):
     f = 1
     for n in range(1, num + 1):
         f *= n
-
+    return f
 
 def dobro(num):
     f = num * 2
