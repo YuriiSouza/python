@@ -5,6 +5,7 @@ def printa(msn):
     print(f'  {msn}  ')
     print("=" * n)
 
+from time import sleep
 
 while True:
     fuc = str(input("Biblioteca ou função: "))
@@ -13,5 +14,6 @@ while True:
         break
     
     printa(f"The manual of the {fuc}")
+    sleep(1)
     print(help(fuc))
     
