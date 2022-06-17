@@ -1,1 +1,3 @@
-#Adicione o m√≥dulo moeda.py criado nos desafios anteriores, uma fun√ß√£o chamada resumo(), que mostre na tela algumas informa√ß√µes geradas pelas fun√ß√µes que j√° temos no m√≥dulo criado at√© aqui.
+#Modifique as funÁıes que form criadas no desafio 107 para que elas aceitem um par‚metro a mais, informando se o valor retornado por elas vai ser ou n„o formatado pela funÁ„o moeda(), desenvolvida no desafio 108.
+import moeda
+print(moeda.increase(100.3, 2, formatation = True))
