@@ -11,15 +11,19 @@ if ',' in val:
   else:
     double = moeda.double(val)
   print(f"The double is R${double},00")
-  
+
 else:
   val = float(val)
-  f form == 'y':
+  if form == 'y':
     double = moeda.double(val, True)
   else:
     double = moeda.double(val)
   print(f"The double is {double}")
 
-increased = moeda.increase(val, 1000)
+if form == 'y':
+  increased = moeda.increase(val, 1000, True)
+  print(f"The value of R$1000 plus R${val} is {increased}")
+else:
+  increased = moeda.increase(val, 1000)  
+  print(f"The value of 1000 plus {val} is {increased}")
 
-print(f"The value of R$1000 plus R${val} is",moeda.formatted(increased))
