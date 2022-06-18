@@ -1,4 +1,4 @@
-# Crie um módulo chamado moeda.py que tenha as funções incorporadas aumentar(), diminuir(), dobro() e metade(). Faça também um programa que importe esse módulo e use algumas dessas funções.
+# Crie um modulo chamado moeda.py que tenha as funï¿½ï¿½es incorporadas aumentar(), diminuir(), dobro() e metade(). Faï¿½a tambï¿½m um programa que importe esse mï¿½dulo e use algumas dessas funï¿½ï¿½es.
 
 import moeda
 
@@ -15,4 +15,4 @@ else:
 
 increased = moeda.increase(val, 1000)
 
-print(f"The value of R$1000 plus R${val} is R${increased:0.2f}")
+print(f"The value of 1000% of R${val} is R${increased:0.2f}")
