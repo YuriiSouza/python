@@ -1,5 +1,5 @@
 # Adapte o c�digo do desafio #107, criando uma fun��o adicional chamada moeda() que consiga mostrar os n�meros como um valor monet�rio formatado.
-import moeda
+from  utilidades_dev import moeda
 
 form = str(input("Do you wanna the formatted mode?")).lower()[0]
 val = str(input("value: "))

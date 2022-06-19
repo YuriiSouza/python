@@ -1,6 +1,6 @@
 # Crie um modulo chamado moeda.py que tenha as fun��es incorporadas aumentar(), diminuir(), dobro() e metade(). Fa�a tamb�m um programa que importe esse m�dulo e use algumas dessas fun��es.
 
-import moeda
+from utilidades_dev import moeda
 
 val = str(input("value: R$"))
 
