@@ -1,4 +1,23 @@
-# Reescreva a função leiaInt() que fizemos no desafio 104, incluindo agora a possibilidade da digitação de um número de tipo inválido. Aproveite e crie também uma função leiaFloat() com a mesma funcionalidade.
+def linha(tam = 30):
+    print('='*tam)
+
+
+def cabecalho(msn):
+    linha()
+    print(msn.center(30))
+    linha()
+
+
+def print_menu(lista):
+    cabecalho('Sistema')
+    c = 1
+    for x in lista:
+        print(f'{c} -- > {x}')
+        c += 1
+     
+    return leia_int('-->> ')
+
+
 def leia_int(mensagem):
     while True:
         try:   
@@ -24,5 +43,3 @@ def leia_float(mensagem):
         else:
             return n
 
-print(leia_int('valor inteiro: '))
-print(leia_float('Valor real apenas: '))
