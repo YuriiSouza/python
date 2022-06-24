@@ -1,3 +1,6 @@
+from re import X
+
+
 def linha(tam = 30):
     print('='*tam)
 
@@ -23,7 +26,7 @@ def leia_int(mensagem):
         try:   
             n = int(input(mensagem))
         except (ValueError, TypeError):
-            print("Valor inválido...")
+            print("Valor inválido!!!")
         except (KeyboardInterrupt):
             print("Quis parar...")
             break
@@ -42,4 +45,11 @@ def leia_float(mensagem):
             break
         else:
             return n
+
+
+def create_file(name):
+    try:
+        open(name, 'x')
+    except:
+        print("Status: File exist...")
 
