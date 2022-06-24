@@ -1,1 +1,4 @@
-[Yuri , 19][Nathalia , 18][claudia , 45]
+Joao;3
+yuri;19
+Maria;20
+Karol;89
