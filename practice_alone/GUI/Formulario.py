@@ -6,7 +6,7 @@ janela = Tk()
 
 janela.title("Formulário")
 janela.geometry('720x720')
-janela.configure(background= 'black')
+janela.configure(background= 'blue')
 
 ttk.Button(janela, text = 'Bem vindo').grid()
 
