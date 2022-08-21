@@ -1,15 +1,19 @@
 '''Vamos aprender a criar uma GUI(graphical user interfaces)'''
+from cProfile import label
 from tkinter import *
 from tkinter import ttk
 from tkinter import colorchooser
+import tkinter
 
-janela = Tk()  
+janela_principal = Tk()  
 
-janela.title("Formulário")
-janela.geometry('720x720')
-n = colorchooser
+janela_principal.title("Formulário")
+janela_principal.geometry('720x720')
 
-ttk.Button(janela, text = 'Bem vindo').grid()
+mensagem_inicial = Label(janela_principal, text="formulario")
+mensagem_inicial.pack()
+
+'''ttk.Button(janela_principal, text = 'Bem vindo').grid()'''
 
 
-janela.mainloop()
+janela_principal.mainloop()
