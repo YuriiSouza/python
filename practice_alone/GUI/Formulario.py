@@ -26,6 +26,10 @@ def click():
     print('Voce clicou...')
     
 
+def log(event):
+    print(event)
+
+
 
 #configuração da borda da janela
 janela_principal = tk.Tk()  
@@ -50,10 +54,10 @@ ttk.Button(janela_principal, text = 'Realizar', command=lambda : select('Realiza
 evento_teste = ttk.Button(janela_principal, text= 'evento', command=click)#criei o botão, e coloquei um evento para acontecer caso alguem clique nele
 
 evento_teste.bind('<Return>', retornar)#relacionei o evento ao botão, o evento return se refere ao click do enter
+evento_teste.bind('<Return>', log, add = '+')
 
 evento_teste.focus()
-evento_teste.pack()#pra que serve esse expand
-
+evento_teste.pack()
 
 
 
