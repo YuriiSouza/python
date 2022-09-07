@@ -30,6 +30,9 @@ def log(event):
     print(event)
 
 
+def mude_cor_bg():
+
+
 
 #configuração da borda da janela
 janela_principal = tk.Tk()  
@@ -59,6 +62,8 @@ evento_teste.bind('<Return>', log, add = '+')
 evento_teste.focus()
 evento_teste.pack()
 
+mudar_cor = ttk.Button(janela_principal, text = 'darkness')
+mudar_cor.bind('<Leave>', mude_cor_bg)
 
 
 janela_principal.mainloop()
