@@ -24,14 +24,9 @@ def retornar(event):
 
 def click():
     print('Voce clicou...')
-    
 
 def log(event):
     print(event)
-
-
-def mude_cor_bg():
-
 
 
 #configuração da borda da janela
@@ -55,15 +50,14 @@ ttk.Button(janela_principal, text = 'Realizar', command=lambda : select('Realiza
 
 #Event biding-associar um evento a uma função
 evento_teste = ttk.Button(janela_principal, text= 'evento', command=click)#criei o botão, e coloquei um evento para acontecer caso alguem clique nele
-
 evento_teste.bind('<Return>', retornar)#relacionei o evento ao botão, o evento return se refere ao click do enter
 evento_teste.bind('<Return>', log, add = '+')
 
-evento_teste.focus()
 evento_teste.pack()
 
-mudar_cor = ttk.Button(janela_principal, text = 'darkness')
-mudar_cor.bind('<Leave>', mude_cor_bg)
+#evento_teste.unbind('<Return>')Retirando a ligação do evento_teste
 
+#Laber e suas opções
+label
 
 janela_principal.mainloop()
