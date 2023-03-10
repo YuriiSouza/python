@@ -35,3 +35,5 @@ def formatted(value):
     value = "R$" + str(value) + ",00"
 
   return value
+
+def anjngjsang;or
