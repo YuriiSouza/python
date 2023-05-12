@@ -1,22 +1,20 @@
+from math import inf
+
+
 n = int(input())
 arr = map(int, input().split())
 
-biggerNumber = 0
-second_place = 0
+biggerNumber = (-inf)
+second_place = (-inf)
 
 for points in arr:
-    if biggerNumber == 0:
+    if points > biggerNumber:
+        second_place = biggerNumber
         biggerNumber = points
-    elif points > biggerNumber:
-        biggerNumber = points
-    
-for points in arr:
-    if points > second_place:
-        n = second_place
+    elif points > second_place and points != biggerNumber:
         second_place = points
-        if second_place == biggerNumber:
-            second_place = n
-        
+    
+
 
 print(second_place)
 print(biggerNumber)
