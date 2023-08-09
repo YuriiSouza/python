@@ -1,0 +1,24 @@
+funcao banho():
+    entra no banheiro
+    fechar a porta
+    trancar a fechadura
+    tirar a roupa
+    entrar no box
+    ligar o chuveiro
+    ensaboar o corpo
+    enxagar
+    desligar o chuveiro
+    sai do box
+    sair do banheiro
+
+
+funcao toalha(toalha):
+    se toalha:
+        secar o corpo
+    se não:
+        chamar a mãe para buscar a toalha
+
+
+sente o cheiro das axilas
+    se axilas == fedido:
+        banho()
