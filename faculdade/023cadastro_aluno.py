@@ -1,0 +1,6 @@
+cadastros = []
+
+formulario = {
+    "matricula": ,
+    
+}
