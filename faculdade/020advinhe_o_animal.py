@@ -1,17 +1,27 @@
-animais = {
-    "pato": 0,
-    "águia": 0,
-    "galinha": 0,
-    "avestruz": 0,
-    "pinguim": 0,
-    "morcego": 0,
-    "ornitorrinco": 0,
-    "leão": 0,
-    "gato": 0,
-    "onça pintada": 0,
-    "baleia": 0,
-    "tubarão": 0,
-    "lambari": 0,
-    "enguia": 0,
-    "arraia": 0
-    }
+animais = ["pato",
+    "águia",
+    "galinha",
+    "avestruz",
+    "pinguim",
+    "morcego",
+    "ornitorrinco",
+    "leão",
+    "gato",
+    "onça pintada",
+    "baleia",
+    "tubarão",
+    "lambari",
+    "enguia",
+    "arraia"
+    ]
+
+pergunta = str(input("Tem pena?"))
+
+if 'sim' in pergunta:
+    excluir = [14, 13, 12, 11, 10, 9, 8, 7, 6, 5]
+    for n in excluir:
+        animais.pop(n)
+else:
+    pergunta = False
+
+print(animais)
