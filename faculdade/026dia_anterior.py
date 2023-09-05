@@ -44,26 +44,28 @@ while True:
     except:
         print("erro")
 
+
 dia = int(data[0])
-if dia == quant_dias_no_mes:
-    dia_seguinte = 1
-else:
-    dia_seguinte = dia + 1
-
-mes = int(data[1]) - 1
-if mes == 11:
-    mes_seguinte = meses[0]
-else:
-    if dia == quant_dias_no_mes:
-        mes_seguinte = meses[mes + 1]
-    else:
-        mes_seguinte = meses[mes]
-    
-
+mes = int(data[1])
 ano = int(data[2])
-if mes == 11 and dia == quant_dias_no_mes:
-    ano_seguinte = ano + 1
-else:
-    ano_seguinte = ano
 
-print(f'O proximo dia é: {dia_seguinte} de {mes_seguinte} de {ano_seguinte}')
+if mes == 1:
+    mes_anterior = meses[11]
+else:
+    if dia == 1:
+        mes_anterior = meses[mes - 1]
+    mes_anterior = meses[mes - 1]
+    
+quant_dias_no_mes_anterior = quant_dias_mes(mes-1, bissexto)
+if dia == 1:
+    dia_anterior = quant_dias_no_mes_anterior
+else:
+    dia_anterior = dia - 1
+
+
+if mes == 1 and dia == 1:
+    ano_anterior = ano - 1
+else:
+    ano_anterior = ano
+
+print(f'O dia anterior é: {dia_anterior} de {mes_anterior} de {ano_anterior}')
