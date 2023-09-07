@@ -2,7 +2,7 @@ def input_answer():
     answer = ''
     
     while True:
-        answer = str(input("Resposta: "))
+        answer = str(input("Resposta: a/b/c/d"))
         if answer.lower() in 'abcd':
             break
             
