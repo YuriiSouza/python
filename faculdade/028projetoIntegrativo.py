@@ -1,17 +1,6 @@
 import requests
-import datetime
 import locale
-
-def turn_date_in_str(date, tipe = False):
-    if tipe == False:
-        date_obj = datetime.datetime.strptime(date, '%Y-%m-%d')
-    else:
-        date_obj = datetime.datetime.strptime(date, '%d%m%Y')
-        
-    date_str = date_obj.strftime('%d de %B de %Y')
-    
-    return date_str
-    
+from teste import *
     
 locale.setlocale(locale.LC_TIME, 'pt_BR.UTF-8') #definando o local para o idioma ser do local
 chave_api = 'V9834MI0TNJA57QB'#chave de acesso a api 
