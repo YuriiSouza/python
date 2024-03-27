@@ -1,4 +1,0 @@
-Joao;3
-yuri;19
-Maria;20
-Karol;89
